@@ -160,7 +160,7 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         # DB name or path to database file if using sqlite3.
         "NAME": "",
         # Not used with sqlite3.
@@ -174,6 +174,13 @@ DATABASES = {
         }
 }
 
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 #########
 # PATHS #
@@ -309,17 +316,6 @@ OPTIONAL_APPS = (
 ###################
 # DEPLOY SETTINGS #
 ###################
-
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Make these unique, and don't share it with anybody.
-SECRET_KEY = "vzk(*85*ug@upe+if933!fqb@b(%o-vz*grj0rxu%7fzm1=6-8"
-NEVERCACHE_KEY = "6xwun@^=xhu4pdmyes(q9*l7v7)n2ezto(jsjc3mo%@ss+%eul"
 
 # Domains for public site
 ALLOWED_HOSTS = ["*"]
