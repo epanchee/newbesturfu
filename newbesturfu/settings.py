@@ -96,10 +96,7 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [
-    'localhost',
-    '*',
-]
+ALLOWED_HOSTS = ['*']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -303,24 +300,28 @@ OPTIONAL_APPS = (
 # DEPLOY SETTINGS #
 ###################
 
+# Make these unique, and don't share it with anybody.
+SECRET_KEY = "vzk(*85*ug@upe+if933!fqb@b(%o-vz*grj0rxu%7fzm1=6-8"
+NEVERCACHE_KEY = "6xwun@^=xhu4pdmyes(q9*l7v7)n2ezto(jsjc3mo%@ss+%eul"
+
 # These settings are used by the default fabfile.py provided.
 # Check fabfile.py for defaults.
 
-FABRIC = {
-    # "SSH_USER": "", # SSH username for host deploying to
-    "HOSTS": ALLOWED_HOSTS[:1], # List of hosts to deploy to (eg, first host)
-    "DOMAINS": ALLOWED_HOSTS, # Domains for public site
-    # "REPO_URL": "ssh://hg@bitbucket.org/user/project", # Project's repo URL
-    # "VIRTUALENV_HOME":  "", # Absolute remote path for virtualenvs
-    "PROJECT_NAME": "newbesturfu", # Unique identifier for project
-    "REQUIREMENTS_PATH": "requirements.txt", # Project's pip requirements
-    # "GUNICORN_PORT": 80, # Port gunicorn will listen on
-    # "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-    # "DB_PASS": "", # Live database password
-    # "ADMIN_PASS": "", # Live admin user password
-    "SECRET_KEY": "vzk(*85*ug@upe+if933!fqb@b(%o-vz*grj0rxu%7fzm1=6-8",
-    "NEVERCACHE_KEY": "6xwun@^=xhu4pdmyes(q9*l7v7)n2ezto(jsjc3mo%@ss+%eul",
-}
+# FABRIC = {
+#     "SSH_USER": "", # SSH username for host deploying to
+#     "HOSTS": ALLOWED_HOSTS[:1], # List of hosts to deploy to (eg, first host)
+#     "DOMAINS": ALLOWED_HOSTS, # Domains for public site
+#     # "REPO_URL": "ssh://hg@bitbucket.org/user/project", # Project's repo URL
+#     # "VIRTUALENV_HOME":  "", # Absolute remote path for virtualenvs
+#     "PROJECT_NAME": "newbesturfu", # Unique identifier for project
+#     "REQUIREMENTS_PATH": "requirements.txt", # Project's pip requirements
+#     # "GUNICORN_PORT": 80, # Port gunicorn will listen on
+#     # "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
+#     # "DB_PASS": "", # Live database password
+#     # "ADMIN_PASS": "", # Live admin user password
+#     "SECRET_KEY": "vzk(*85*ug@upe+if933!fqb@b(%o-vz*grj0rxu%7fzm1=6-8",
+#     "NEVERCACHE_KEY": "6xwun@^=xhu4pdmyes(q9*l7v7)n2ezto(jsjc3mo%@ss+%eul",
+# }
 
 
 ##################
