@@ -1,9 +1,0 @@
-{% extends "pages/page.html" %}
-
-{% load mezzanine_tags %}
-
-{% block main %}{{ block.super }}
-
-    {{ page.downloadedpage.download|safe }}
-
-{% endblock %}
