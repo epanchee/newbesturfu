@@ -112,7 +112,7 @@ USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "ru"
+LANGUAGE_CODE = "rus"
 
 # Supported languages
 _ = lambda s: s
@@ -120,6 +120,11 @@ LANGUAGES = (
     ('en', _('English')),
     ('ru', _('Russian'))
 )
+
+# Make russian file names available for os
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
