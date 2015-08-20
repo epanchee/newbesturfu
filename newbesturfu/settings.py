@@ -307,7 +307,7 @@ OPTIONAL_APPS = (
 # Check fabfile.py for defaults.
 
 FABRIC = {
-    "SSH_USER": "", # SSH username for host deploying to
+    # "SSH_USER": "", # SSH username for host deploying to
     "HOSTS": ALLOWED_HOSTS[:1], # List of hosts to deploy to (eg, first host)
     "DOMAINS": ALLOWED_HOSTS, # Domains for public site
     # "REPO_URL": "ssh://hg@bitbucket.org/user/project", # Project's repo URL
