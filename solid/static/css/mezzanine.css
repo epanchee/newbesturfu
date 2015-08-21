@@ -187,8 +187,8 @@ img.pull-left {
 .post-meta > a {
   color: #666;
 }
-.share-facebook, .share-twitter,
-.share-facebook:hover, .share-twitter:hover {
+.share-facebook, .share-twitter, .share-vk,
+.share-facebook:hover, .share-twitter:hover, .share-vk:hover {
   color: #fff;
   font-weight: 700;
 }
@@ -200,9 +200,7 @@ img.pull-left {
 }
 
 .share-vk {
-    background: #45688E;
-    color: #fff;
-    font-weight: 700;
+  background-color: #45688E;
 }
 .tag-cloud li {
   padding-left: 0;

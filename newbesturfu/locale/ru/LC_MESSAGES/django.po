@@ -112,10 +112,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\solid\templates\blog\blog_post_list.html:162
-#, fuzzy
-#| msgid "read more"
 msgid "[read more]"
-msgstr "Читать далее"
+msgstr "[Читать далее]"
 
 #: .\solid\templates\blog\includes\filter_panel.html:6
 #: .\solid\templates\index.html:231
