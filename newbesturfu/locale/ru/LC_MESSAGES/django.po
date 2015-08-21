@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-21 16:09+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\newbesturfu\settings.py:120
+msgid "English"
+msgstr ""
+
+#: .\newbesturfu\settings.py:121
+msgid "Russian"
+msgstr ""
+
+#: .\solid\templates\base.html:64
+msgid "Toggle Navigation"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_detail.html:53
+#: .\solid\templates\blog\blog_post_list.html:153
+#: .\solid\templates\blog\includes\filter_panel.html:67
+msgid "Tags"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_detail.html:72
+msgid "Share on Twitter"
+msgstr "Опубликовать в Twitter"
+
+#: .\solid\templates\blog\blog_post_detail.html:73
+msgid "Share on Facebook"
+msgstr "Опубликовать в Facebook"
+
+#: .\solid\templates\blog\blog_post_detail.html:74
+msgid "Share on VK"
+msgstr "Опубликовать в VK"
+
+#: .\solid\templates\blog\blog_post_detail.html:99
+msgid "Related posts"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:4
+#: .\solid\templates\blog\blog_post_list.html:22
+msgid "Blog"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:31
+msgid "Tag:"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:33
+msgid "Category:"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:37
+msgid "Author:"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:53
+msgid "Viewing posts tagged"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:55
+msgid "Viewing posts for the category"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:57
+msgid "Viewing posts from"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:60
+msgid "Viewing posts by"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:99
+msgid "Posted by"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:108
+msgid "in"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:118
+#, python-format
+msgid "%(sometime)s"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:127
+#: .\solid\templates\generic\includes\comments.html:3
+msgid "Comments"
+msgstr ""
+
+#: .\solid\templates\blog\blog_post_list.html:131
+#, python-format
+msgid "%(comments_count)s comment"
+msgid_plural "%(comments_count)s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\solid\templates\blog\blog_post_list.html:162
+#, fuzzy
+#| msgid "read more"
+msgid "[read more]"
+msgstr "Читать далее"
+
+#: .\solid\templates\blog\includes\filter_panel.html:6
+#: .\solid\templates\index.html:231
+msgid "Recent Posts"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:35
+msgid "Archive"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:52
+msgid "Categories"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:84
+msgid "Authors"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:97
+msgid "Feeds"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:99
+#: .\solid\templates\blog\includes\filter_panel.html:103
+#: .\solid\templates\blog\includes\filter_panel.html:107
+#: .\solid\templates\blog\includes\filter_panel.html:111
+msgid "RSS"
+msgstr ""
+
+#: .\solid\templates\blog\includes\filter_panel.html:100
+#: .\solid\templates\blog\includes\filter_panel.html:104
+#: .\solid\templates\blog\includes\filter_panel.html:108
+#: .\solid\templates\blog\includes\filter_panel.html:112
+msgid "Atom"
+msgstr ""
+
+#: .\solid\templates\email\comment_notification.html:6
+msgid "A new comment has been posted on"
+msgstr ""
+
+#: .\solid\templates\email\comment_notification.html:10
+#, python-format
+msgid ""
+"\n"
+"    At %(submit_date)s %(user_name)s wrote:\n"
+"    "
+msgstr ""
+
+#: .\solid\templates\email\comment_notification.txt:7
+#, python-format
+msgid ""
+"\n"
+"At %(submit_date)s %(user_name)s wrote:\n"
+msgstr ""
+
+#: .\solid\templates\errors\404.html:6 .\solid\templates\errors\404.html:10
+#: .\solid\templates\errors\404.html:15
+msgid "Page not found"
+msgstr ""
+
+#: .\solid\templates\errors\404.html:16
+msgid "The page you requested does not exist."
+msgstr ""
+
+#: .\solid\templates\errors\500.html:6 .\solid\templates\errors\500.html:10
+#: .\solid\templates\errors\500.html:15
+msgid "Error"
+msgstr ""
+
+#: .\solid\templates\errors\500.html:16
+msgid "Sorry, an error occurred."
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:22
+#: .\solid\templates\generic\includes\comment.html:59
+#: .\solid\templates\twitter\tweets.html:19
+#, python-format
+msgid "%(sometime)s ago"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:30
+msgid "Link"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:33
+#: .\solid\templates\generic\includes\comment.html:49
+msgid "Reply"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:55
+msgid "Comment deleted"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:57
+msgid "Comment awaiting approval"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comment.html:71
+msgid "There are currently no comments"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comments.html:17
+msgid "New Comment"
+msgstr ""
+
+#: .\solid\templates\generic\includes\comments.html:25
+msgid "Comment"
+msgstr ""
+
+#: .\solid\templates\generic\includes\rating.html:5
+msgid "Current rating"
+msgstr ""
+
+#: .\solid\templates\generic\includes\rating.html:7
+msgid "Currently unrated"
+msgstr ""
+
+#: .\solid\templates\generic\includes\rating.html:17
+msgid "Rate"
+msgstr ""
+
+#: .\solid\templates\includes\editable_form.html:16
+msgid "Save"
+msgstr ""
+
+#: .\solid\templates\includes\editable_form.html:17
+msgid "Cancel"
+msgstr ""
+
+#: .\solid\templates\includes\editable_form.html:25
+msgid "Edit"
+msgstr ""
+
+#: .\solid\templates\includes\editable_toolbar.html:8
+msgid "Admin"
+msgstr ""
+
+#: .\solid\templates\includes\editable_toolbar.html:9
+msgid "Log out"
+msgstr ""
+
+#: .\solid\templates\includes\form_errors.html:8
+msgid "Please correct the errors below."
+msgstr ""
+
+#: .\solid\templates\includes\pagination.html:7
+msgid "Page"
+msgstr ""
+
+#: .\solid\templates\includes\pagination.html:7
+msgid "of"
+msgstr ""
+
+#: .\solid\templates\includes\search_form.html:5
+msgid "Search"
+msgstr ""
+
+#: .\solid\templates\includes\search_form.html:14
+msgid "Everything"
+msgstr ""
+
+#: .\solid\templates\includes\search_form.html:26
+msgid "Go"
+msgstr ""
+
+#: .\solid\templates\index.html:4
+#: .\solid\templates\pages\menus\breadcrumb.html:4
+#: .\solid\templates\pages\menus\breadcrumb.html:10
+#: .\solid\templates\pages\menus\dropdown.html:10
+#: .\solid\templates\pages\menus\footer_tree.html:11
+#: .\solid\templates\pages\menus\mobile.html:10
+#: .\solid\templates\pages\menus\primary.html:8
+#: .\solid\templates\pages\menus\tree.html:9
+#: .\solid\templates\search_results.html:13
+msgid "Home"
+msgstr "Главная"
+
+#: .\solid\templates\pages\menus\admin.html:31
+msgid "Add"
+msgstr ""
+
+#: .\solid\templates\partners.html:3
+msgid "Партнеры BEST URFU"
+msgstr ""
+
+#: .\solid\templates\search_results.html:5
+#: .\solid\templates\search_results.html:6
+#: .\solid\templates\search_results.html:15
+msgid "Search Results"
+msgstr ""
+
+#: .\solid\templates\search_results.html:22
+#, python-format
+msgid ""
+"\n"
+"No results were found in %(search_type)s matching your query: %(query)s\n"
+msgstr ""
+
+#: .\solid\templates\search_results.html:26
+#, python-format
+msgid ""
+"\n"
+"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
+"matching your query: %(query)s\n"
+msgstr ""
+
+#: .\solid\templates\search_results.html:37
+msgid "read more"
+msgstr "Читать далее"
+
+#: .\solid\templates\twitter\tweets.html:7
+msgid "Recent Tweets"
+msgstr ""
+
+#~ msgid "Ekaterinburg"
+#~ msgstr "Екатеринбург"
+
+#~ msgid "Hello, World!"
+#~ msgstr "Привет, мир!"
