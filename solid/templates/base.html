@@ -100,11 +100,6 @@
 {% endif %}
 {% endnevercache %}
 
- 
-   
-
-
-
 </div>
 {% block all_content%}
 <div class="container mtb">
@@ -123,10 +118,8 @@
 {% endblock %}
 {% block right_wrapper%}
 <div class="col-md-{% block right_width %}3{% endblock %} right">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-
+    <h4>Select language</h4>
+    {% include "includes/language_selector.html" %}
     {% include "intagme.html" %}
     {% block right_panel %}
     {% ifinstalled mezzanine.twitter %}
