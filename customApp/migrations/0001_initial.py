@@ -7,7 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0006_auto_20150824_2224'),
+        ('pages', '__latest__'),
     ]
 
     operations = [
