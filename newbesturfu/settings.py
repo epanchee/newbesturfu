@@ -77,10 +77,13 @@ from __future__ import absolute_import, unicode_literals
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
-import customApp
 
 USE_SOUTH = True
 
+
+# If True, the django-modeltranslation will be added to the
+# INSTALLED_APPS setting.
+USE_MODELTRANSLATION = True
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -117,9 +120,11 @@ LANGUAGE_CODE = "ru"
 # Supported languages
 _ = lambda s: s
 LANGUAGES = (
+    ('ru', _('Russian')),
     ('en', _('English')),
-    ('ru', _('Russian'))
 )
+
+MODELTRANSLATION_FALLBACK_LANGUAGES = {'default': ('ru', 'en')}
 
 # Make russian file names available for os
 import sys
@@ -147,8 +152,8 @@ INTERNAL_IPS = ("127.0.0.1",)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    "django.template.loaders.app_directories.Loader",
     "django.template.loaders.filesystem.Loader",
+    "django.template.loaders.app_directories.Loader",
 )
 
 AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
@@ -238,9 +243,9 @@ INSTALLED_APPS = (
     "mezzanine.conf",
     "mezzanine.core",
     "mezzanine.generic",
+    "mezzanine.pages",
     "mezzanine.blog",
     "mezzanine.forms",
-    "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
     "customApp",
