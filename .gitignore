@@ -52,10 +52,6 @@ nosetests.xml
 coverage.xml
 *,cover
 
-# Translations
-#*.mo # heroku issue
-*.pot
-
 # Django stuff:
 *.log
 
@@ -163,7 +159,7 @@ coverage.xml
 *,cover
 
 # Translations
-*.mo
+#*.mo # heroku issue
 *.pot
 
 # Django stuff:
