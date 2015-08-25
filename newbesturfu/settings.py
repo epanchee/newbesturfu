@@ -99,7 +99,9 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '*',
+]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -134,8 +136,14 @@ sys.setdefaultencoding('utf8')
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-# TODO dont forget about debug mode
 DEBUG = True
+
+EMAIL_HOST = os.environ['EMAIL_HOST']
+EMAIL_PORT = os.environ['EMAIL_PORT']
+EMAIL_USE_TLS = os.environ['EMAIL_USE_TLS']
+EMAIL_USE_SSL = os.environ['EMAIL_USE_SSL']
+EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
