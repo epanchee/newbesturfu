@@ -134,7 +134,7 @@ sys.setdefaultencoding('utf8')
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-# TODO не забудь убрать
+# TODO dont forget about debug mode
 DEBUG = True
 
 # Whether a user's session cookie expires when the Web browser is closed.
