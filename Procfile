@@ -1,1 +1,1 @@
-web: gunicorn newbesturfu.wsgi --log-file -
+web: gunicorn newbesturfu.wsgi --log-file running.log
