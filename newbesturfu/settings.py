@@ -73,14 +73,17 @@ from __future__ import absolute_import, unicode_literals
 
 # Setting to turn on featured images for blog posts. Defaults to False.
 #
-# BLOG_USE_FEATURED_IMAGE = True
+BLOG_USE_FEATURED_IMAGE = True
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
-import customApp
 
 USE_SOUTH = True
 
+
+# If True, the django-modeltranslation will be added to the
+# INSTALLED_APPS setting.
+USE_MODELTRANSLATION = True
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -96,7 +99,9 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '*',
+]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -117,9 +122,11 @@ LANGUAGE_CODE = "ru"
 # Supported languages
 _ = lambda s: s
 LANGUAGES = (
+    ('ru', _('Russian')),
     ('en', _('English')),
-    ('ru', _('Russian'))
 )
+
+MODELTRANSLATION_FALLBACK_LANGUAGES = {'default': ('ru', 'en')}
 
 # Make russian file names available for os
 import sys
@@ -129,7 +136,7 @@ sys.setdefaultencoding('utf8')
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = False
+DEBUG = True
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -147,8 +154,8 @@ INTERNAL_IPS = ("127.0.0.1",)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    "django.template.loaders.app_directories.Loader",
     "django.template.loaders.filesystem.Loader",
+    "django.template.loaders.app_directories.Loader",
 )
 
 AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
@@ -250,9 +257,9 @@ INSTALLED_APPS = (
     "mezzanine.conf",
     "mezzanine.core",
     "mezzanine.generic",
+    "mezzanine.pages",
     "mezzanine.blog",
     "mezzanine.forms",
-    "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
     "customApp",
