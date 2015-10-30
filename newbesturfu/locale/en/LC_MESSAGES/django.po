@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-21 17:20+0500\n"
+"POT-Creation-Date: 2015-10-30 14:02+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,17 +21,76 @@ msgstr ""
 msgid "Download link"
 msgstr ""
 
-#: .\newbesturfu\settings.py:120
+#: .\newbesturfu\settings.py:125
+msgid "Russian"
+msgstr ""
+
+#: .\newbesturfu\settings.py:126
 msgid "English"
 msgstr ""
 
-#: .\newbesturfu\settings.py:121
-msgid "Russian"
+#: .\newbesturfu\templates\admin\change_list.html:61
+#: .\solid\templates\index.html:4
+#: .\solid\templates\pages\menus\breadcrumb.html:4
+#: .\solid\templates\pages\menus\breadcrumb.html:10
+#: .\solid\templates\pages\menus\dropdown.html:10
+#: .\solid\templates\pages\menus\footer_tree.html:11
+#: .\solid\templates\pages\menus\mobile.html:10
+#: .\solid\templates\pages\menus\primary.html:8
+#: .\solid\templates\pages\menus\tree.html:9
+#: .\solid\templates\search_results.html:13
+msgid "Home"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:79
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:90
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\newbesturfu\templates\admin\change_list.html:121
+#: .\solid\templates\includes\editable_form.html:16
+msgid "Save"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:135
+msgid "Results"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:137
+#, python-format
+msgid "%(counter)s found"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:138
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: .\newbesturfu\templates\admin\change_list.html:152
+msgid "Filter"
 msgstr ""
 
 #: .\solid\templates\base.html:64
 msgid "Toggle Navigation"
 msgstr ""
+
+#: .\solid\templates\base.html:152
+msgid "Социальные сети"
+msgstr "Social networks"
+
+#: .\solid\templates\base.html:169
+msgid "Секретарь BEST URFU"
+msgstr "Secretary of BEST URFU"
+
+#: .\solid\templates\base.html:170
+msgid "Никита Логачев"
+msgstr "Nikita Logachev"
 
 #: .\solid\templates\blog\blog_post_detail.html:53
 #: .\solid\templates\blog\blog_post_list.html:153
@@ -237,10 +296,6 @@ msgstr ""
 msgid "Rate"
 msgstr ""
 
-#: .\solid\templates\includes\editable_form.html:16
-msgid "Save"
-msgstr ""
-
 #: .\solid\templates\includes\editable_form.html:17
 msgid "Cancel"
 msgstr ""
@@ -259,6 +314,10 @@ msgstr ""
 
 #: .\solid\templates\includes\form_errors.html:8
 msgid "Please correct the errors below."
+msgstr ""
+
+#: .\solid\templates\includes\language_selector.html:20
+msgid "Change"
 msgstr ""
 
 #: .\solid\templates\includes\pagination.html:7
@@ -281,25 +340,13 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: .\solid\templates\index.html:4
-#: .\solid\templates\pages\menus\breadcrumb.html:4
-#: .\solid\templates\pages\menus\breadcrumb.html:10
-#: .\solid\templates\pages\menus\dropdown.html:10
-#: .\solid\templates\pages\menus\footer_tree.html:11
-#: .\solid\templates\pages\menus\mobile.html:10
-#: .\solid\templates\pages\menus\primary.html:8
-#: .\solid\templates\pages\menus\tree.html:9
-#: .\solid\templates\search_results.html:13
-msgid "Home"
-msgstr ""
-
 #: .\solid\templates\pages\menus\admin.html:31
 msgid "Add"
 msgstr ""
 
 #: .\solid\templates\partners.html:3
 msgid "Партнеры BEST URFU"
-msgstr ""
+msgstr "Partners of BEST URFU"
 
 #: .\solid\templates\search_results.html:5
 #: .\solid\templates\search_results.html:6
