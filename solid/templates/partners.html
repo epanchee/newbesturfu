@@ -2,13 +2,9 @@
 
 <h3>{% trans "Партнеры BEST URFU" %}</h3>
 <div class="partners">
-    <div class="slide"><img src="/static/media/uploads/partners/zik.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/npo_auto.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/smak.png"></div>
-    <div class="slide"><a href="http://dolcefavoriti.ru/"><img src="/static/media/uploads/partners/dolce_fav.jpg"></a></div>
-    <div class="slide"><img src="/static/media/uploads/partners/cola_logo.svg.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/vl.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/razgon_logo.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/udeb.png"></div>
-    <div class="slide"><img src="/static/media/uploads/partners/a_print.jpg"></div>
+    {% for partner in partners %}
+        <div class="slide">{% if partner.href %}
+            <a href="{{ partner.href }}"><img src="{{ partner.logo_url }}"></a>{% else %}
+            <img src="{{ partner.logo_url }}">{% endif %}</div>
+    {% endfor %}
 </div>
