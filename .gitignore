@@ -222,6 +222,6 @@ crashlytics-build.properties
 
 
 
-dump.json
+dump*.json
 fabfile.py
 solid/static/media/uploads
