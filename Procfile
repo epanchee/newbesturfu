@@ -1,1 +1,0 @@
-web: gunicorn newbesturfu.wsgi --log-file running.log
