@@ -1,2 +1,2 @@
 MAILTO="it.responsible@best-urfu.ru"
-50 0-23 * * * best-admin /home/best-admin/newbesturfu/deploy/dumpdata.sh
+0 3 * * * best-admin /home/best-admin/newbesturfu/deploy/dumpdata.sh
